@@ -1,8 +1,103 @@
 * {
     border: 1px dotted blue;
+    margin: 0;
+    padding: 0
 }
 
-main {
+body, input[type="button"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#f6f7f8 0%, #e7e8e9 33.33%, #cbd0d6 66.67%, #ccdcec 100%);
+}
+
+header {
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    height: 75px;
+    top: 50px;
+    padding: 20px 0;
+}
+
+main, footer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+textarea {
     display: inline-block;
-    
+    margin: 10px 30px;
+    width: 440px;
+    height: 140px;
+    border-radius: 16px;
+    background: rgb(233, 234, 232);
+    resize: vertical;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main span {
+    display: inline-block;
+    width: 200px;
+    text-align: center;    
+}
+
+main span::before {
+    content: ">> Traduce >>";
+}
+
+footer button {
+    display: inline-block;
+    color: #ececf7;
+    background: navy;
+    gap: 2em;
+    font-size: larger;
+    margin: 4px 25px;
+    padding: 4px 20px;
+    border-radius: 16px;
+}
+
+body>p {
+    font-size: medium;
+    text-align: center;
+    color: blue;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+
+    footer button {
+        margin: 4px 5px;
+        padding: 4px 10px;
+    }
+
+    main {
+        flex-direction: column-reverse;       
+    }
+
+    textarea {
+        width: 95%;
+        margin: 3px 35px;
+    }
+
+    main span {
+        width: 300px;
+        margin: 4px auto;
+    }
+
+    main span::before {
+        content: "<<<<< Traduce <<<<<";
+    }
+
+    header {
+        font-size: medium;
+    }
+
+    body>p {
+        font-size: smaller;
+        color: red;
+    }
+        
 }
