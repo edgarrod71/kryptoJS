@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="encriptador.css">
     <title>Encriptador/Desencriptador Alura</title>
 </head>
 <body>
     <header>
+        <p>a</p>
         <p>Encriptador / Desencriptador - Alura</p>
     </header>
     <main>
@@ -16,9 +21,10 @@
         <textarea name="traducido" id="traducido" disabled>segundo</textarea>
     </main>
     <footer>
-        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="krypto('#inicial', '#traducido', enumED.encripte)">Encriptar</button>
         <button onclick="copiar('#inicial', '#traducido')">Copiar</button>
-        <button onclick="desencriptar()">Desencriptar</button>
+        <button onclick="krypto('#inicial', '#traducido', enumED.desencripte)">Desencriptar</button>
+        <!-- button onclick="desencriptar('#inicial', '#traducido')">Desencriptar</button> -->
     </footer>
     <p>CopyRight 2024 by edgarrod71@gmail.com (just for fun)</p>
     <script src="encriptador.js"></script>

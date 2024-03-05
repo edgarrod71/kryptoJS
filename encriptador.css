@@ -1,11 +1,10 @@
 * {
-    border: 1px dotted blue;
     margin: 0;
     padding: 0
 }
 
 body, input[type="button"] {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(#f6f7f8 0%, #e7e8e9 33.33%, #cbd0d6 66.67%, #ccdcec 100%);
 }
 
@@ -13,9 +12,15 @@ header {
     text-align: center;
     font-weight: 600;
     font-size: xx-large;
-    height: 75px;
+    height: 120px;
     top: 50px;
     padding: 20px 0;
+}
+
+header :nth-child(1) {
+    font-size: 1.77em;
+    font-weight: 900;
+    color: rgb(0, 0, 166);
 }
 
 main, footer {
@@ -31,9 +36,9 @@ textarea {
     width: 440px;
     height: 140px;
     border-radius: 16px;
-    background: rgb(233, 234, 232);
+    background: #e9eae8;
     resize: vertical;
-    border: none;
+    border: 1px dotted #84a0fc;
     font-size: 24px;
     font-weight: 600;
 }
@@ -92,6 +97,7 @@ body>p {
     }
 
     header {
+        height: 70px;
         font-size: medium;
     }
 
