@@ -10,14 +10,16 @@ function krypto(selector, destino, tipo) {
     var contenido = document.querySelector(selector);
     var traducido = document.querySelector(destino);
     let strMay = contenido.value;
-    if (tipo === enumED.encripte) 
+    if (tipo === enumED.encripte) {
         for (let i=0; i < vocales.length; i++) {
             strMay = strMay.replaceAll(vocales[i], valores[i].toUpperCase());
         }
-    else 
+    }
+    else { 
         for (let i=0; i < vocales.length; i++) {
             strMay = strMay.replaceAll(valores[i], vocales[i].toUpperCase());
         }
+    }
     traducido.textContent = strMay.toLowerCase();    
 }
 
@@ -27,7 +29,6 @@ function copiar(selector, destino) {
     textDestino.select();
     document.execCommand("copy");
     copiada = textDestino.value;
-    textDestino.blur();
     textSelector.value = '';
     textSelector.value = copiada;
     console.log(copiada);
