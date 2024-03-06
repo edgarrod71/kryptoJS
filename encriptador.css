@@ -50,7 +50,7 @@ main span {
 }
 
 main span::before {
-    content: ">> Traduce >>";
+    content: ">> Encripta >>";
 }
 
 footer button {
@@ -93,7 +93,7 @@ body>p {
     }
 
     main span::before {
-        content: "<<<<< Traduce <<<<<";
+        content: "<<<<< Encripta <<<<<";
     }
 
     header {
