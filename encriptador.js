@@ -11,6 +11,7 @@ function krypto(selector, destino, tipo) {
     var traducido = document.querySelector(destino);
     let strMay = contenido.value;
     //if (!/[A-Z]/.test(strMay)) alert(mError);
+    alert(mError);
     if (tipo === enumED.encripte) {
         for (let i=0; i < vocales.length; i++) {
             strMay = strMay.replaceAll(vocales[i], valores[i].toUpperCase());
