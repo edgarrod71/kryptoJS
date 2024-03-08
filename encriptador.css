@@ -1,4 +1,5 @@
 * {
+    margin: 1px dotted red;
     margin: 0;
     padding: 0
 }
@@ -39,18 +40,19 @@ textarea {
     background: #e9eae8;
     resize: vertical;
     border: 1px dotted #84a0fc;
+    padding: 12px 20px;
     font-size: 24px;
     font-weight: 600;
 }
 
 main span {
     display: inline-block;
-    width: 200px;
+    width: 220px;
     text-align: center;    
 }
 
 main span::before {
-    content: ">> Encripta >>";
+    content: ">> Encriptalo >>";
 }
 
 footer button {
@@ -60,7 +62,7 @@ footer button {
     gap: 2em;
     font-size: larger;
     margin: 4px 25px;
-    padding: 4px 20px;
+    padding: 4px 25px;
     border-radius: 16px;
 }
 
@@ -93,7 +95,7 @@ body>p {
     }
 
     main span::before {
-        content: "<<<<< Encripta <<<<<";
+        content: "<<<<< Encriptalo <<<<<";
     }
 
     header {
