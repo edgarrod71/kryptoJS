@@ -1,5 +1,4 @@
 * {
-    margin: 1px dotted red;
     margin: 0;
     padding: 0
 }
@@ -52,7 +51,7 @@ main span {
 }
 
 main span::before {
-    content: ">> Encriptalo >>";
+    content: ">> Encríptalo >>";
 }
 
 footer button {
@@ -64,6 +63,12 @@ footer button {
     margin: 4px 25px;
     padding: 4px 25px;
     border-radius: 16px;
+}
+
+footer button:nth-child(3) {
+    color: navy;
+    border: 1px solid navy;
+    background: white;;
 }
 
 body>p {
